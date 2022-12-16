@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <title>SignUp Form</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Menna Elad">
+        <meta name="keywords" content="Login Form">
+        <meta name="description" content="login Form">
+
+        <link rel="icon" href="image/login.jpg">
+
+        <link  rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class=" box mx-md-auto text-md-center my-md-5 py-md-5">
+            <h1 class="smart mb-md-3">Smart Login System </h1>
+            <input id="signupName" style="font-family:Arial, FontAwesome" type="text" onkeyup="validatesignupName()" placeholder="  &#xF007; Enter Your Name" class=" form-control my-md-3 fw-bolder">
+                <p class="text-danger d-none fw-bolder bg-light w-50 mx-auto" id="name-validation">please check your input (suppose to start with capital )</p>
+
+            <input  id="signupEmail" style="font-family:Arial, FontAwesome" onkeyup="validatesignupEmail()" type="text" placeholder=" &#xF007; Enter Your Email" class=" form-control my-md-3 fw-bolder">
+            <p class="text-danger d-none fw-bolder bg-light w-25 mx-auto" id="email-validation">  Invalid Email Address! </p>
+
+            <input id="signupPassward" style="font-family:Arial, FontAwesome" onkeyup="validatesignupPassward()" type="password" placeholder=" &#xf023; Enter Your Passward" class=" form-control my-md-3 fw-bolder ">
+            <p class="text-danger d-none fw-bolder bg-light w-50 mx-auto" id="Passward-validation">Password must be 5 characters at least </p>
+             <h6 class="text-center text-danger d-none NotComplete fw-bolder bg-light w-25 mx-auto">All inputs is required</h6>
+            <h6 class="text-center text-success fs-5 d-none Correct fw-bolder bg-light w-25 mx-auto">success</h6>
+            <!--<h6 class="text-center text-danger fs-5 d-none Exist">email already exists</h6>-->
+            <button id="Button" class="btn  btn-outline-info form-control my-md-4 fw-bolder ">Sign Up</button>
+            <p  class=" text-light fw-bolder" >Don’t have an account? <span > <a class=" text-light fw-bolder" href="index.html"> Sign in </a> </span></p>
+        </div>
+        <script src="js/jquery-3.6.0.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>
